@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_vvtilak_Harnessdemo_1708668221755-pr-trigger-input-set
+  identifier: Build_vvtilak_Harnessdemo_1708668221755prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_vvtilak_Harnessdemo_1708668221755
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
