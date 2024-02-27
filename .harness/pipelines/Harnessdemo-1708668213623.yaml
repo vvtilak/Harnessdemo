@@ -42,5 +42,5 @@ pipeline:
     ci:
       codebase:
         connectorRef: account.Github_OAuth_1708668196530
-        repoName: vvtilak/Harnessdemo
+        repoName: vvtilak/sample_harenss_demo
         build: <+input>
