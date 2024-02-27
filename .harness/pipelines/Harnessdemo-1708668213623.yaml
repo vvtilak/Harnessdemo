@@ -24,7 +24,7 @@ pipeline:
                   name: snyk_test
                   identifier: snyk_test
                   spec:
-                    connectorRef: account.harnessImage
+                    connectorRef: docker_connection
                     image: vvtilak:helo-world
                     shell: Sh
                     command: |-
