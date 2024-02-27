@@ -19,6 +19,19 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "Welcome to Harness CI"
+              - step:
+                  type: Run
+                  name: snyk_test
+                  identifier: snyk_test
+                  spec:
+                    connectorRef: account.harnessImage
+                    image: vvtilak:helo-world
+                    shell: Sh
+                    command: |-
+                      snyk config set api=$SNYK_TOKEN
+                      snyk test
+                    envVariables:
+                      snyk_token: ce4cfa62-a268-4a72-a9a1-d15e1c9daaef
           platform:
             os: Linux
             arch: Amd64
