@@ -27,7 +27,9 @@ pipeline:
                     connectorRef: docker_connection
                     repo: vvtilak
                     tags:
+                      - latest
                       - "1.0"
+                    dockerfile: Dockerfile
                     target: /harness
               - step:
                   type: Run
